@@ -1,0 +1,5 @@
+primeiro calculei quanto o carro se moveria em km enquanto o caminhão ficava seus 10min no pedágio, depois, calculei a velocidade em qual os dois se aproximavam, 
+que é a soma da suas velocidades 190km, ai é só pegar 100km  menos o tanto que o carro se moveu nos 10min 18,33km, e fazer a regra de 3 para ver em quantos minutos um 
+veiculo a 190km faria esse trecho, que da cerca de 81km em 25min, mas como ninguem está a 190, deduz que os dois se encontram em 25min, ai é so calcular quanto o caminhão
+se moveu em 25min, 80km/60min * 25 = 34km e quanto o carro teria se movido mais o tempo que ele andou antes, ou seja 110km/60min * 25min = 47 + 18.33 que da mais ou menos
+os 64 65km.... 
