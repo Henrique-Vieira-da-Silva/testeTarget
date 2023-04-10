@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script name="dados" type="text/javascript" src="dados.json"> </script>
+    <title>Faturamento diário</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    var cont = 0, media = 0, maior = Number.MIN_SAFE_INTEGER, menor = Number.MAX_SAFE_INTEGER;
+    while (dados.length > cont) {
+        console.log(dados[cont].dia);
+
+
+
+        if (maior < dados[cont].valor)
+            maior = dados[cont].valor;
+
+        if (dados[cont].valor != 0) {
+            media += dados[cont].valor; 
+            if (dados[cont].valor < menor)
+                menor = dados[cont].valor;
+        }
+
+        cont++;
+
+    }
+
+    alert("o maior valor registrado é: " + maior + " e o menor valor registrado excluindo os dias sem faturamento é: " + menor + " e a média é: " + media/dados.length);
+
+
+</script>
+
+
+</html>

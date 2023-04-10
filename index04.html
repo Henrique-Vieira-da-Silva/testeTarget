@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Faturamento diário</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+  var dados = [["SP",67836.43],["RJ", 36678.66],["MG",29229.88],["ES",27165.48],["Outros",19849.53]]
+
+  var cont=0,total=0;
+    while(cont<dados.length){
+        total += dados[cont][1];
+        cont++;
+    }
+    total = parseFloat(total);
+    cont=0;
+    while(cont<dados.length){
+        console.log("A distribuidora do estado: "+dados[cont][0]+" contribuiu com: "+ dados[cont][1]/(total/100)+"%");
+        cont++;
+    }
+
+  </script>
+    
+
+</html>
